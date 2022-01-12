@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: white;
+  margin: 0 0;
+  overflow: scroll;
+}
+.header {
+  padding: 10px 0;
+  background-color: rgb(26, 25, 25);
+  height: 70px;
+  width: 100%;
+  color: #ccc;
+}
+.navList {
+  list-style-type: none;
+}
+.navList li {
+  float: left;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.navList li a:hover{
+  color: rgb(14, 162, 182);
+  transition: color .2s ease-in;
+}
+#link1 {
+  margin-left: 30px;
+}
+#link2 {
+  margin-left: 600px
+}
+#link3 {
+  margin-left: 150px
+}
+#link4 {
+  margin-left: 600px;
+  /* margin-top: -9px; */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navList a {
+  color: #ccc;
+  text-transform: uppercase;
+}
+.header2 {
+  background-color: rgb(82, 80, 80);
+  height: 105px;
+}
+.mainNavList {
+  margin: -90px 550px;
+  width: 50%;
+}
+img#logo {
+  display: inline;
+  margin: 10px 100px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 15px;
+  padding: 30px 20px;
+  text-align: left;
+}
+.dropdown:hover {
+  transition: all 0.3s ease-in-out;
+  color: rgb(14, 162, 182);
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: rgb(105, 185, 196);
+  min-width: 160px;
+  /* min-height: 200px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 33px -15px;
+  
+}
+.dropdownContent a {
+  margin: 8px 0;
+  display: block;
+  padding: 12px 2px 12px 0;
+}
+.dropdown:hover .dropdownContent {
+  display: block;
+  z-index: 2;
+}
+
+/* this is for the 'sale' and 'brands' tabs which arent in the 'dropdown' class */
+.mainNavList a {
+  margin: 0 30px;
+  /* width: 10%; */
+}
+.extraTabs {
+  margin: 0 15px;
+  /* width: 20%; */
+}
+#navSearch {
+  float: right;
+  display: block;
+  padding: 16px 18px;
+  border-radius: 50px;
+  margin-top: 18px;
+  margin-right: 40px;
+  width: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-color: antiquewhite;
+  z-index: 0;
+}
+.imageCarousel {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateX;
+  transition: transform 0.8s;
+}
+.btn {
+  font-size: 2em;
+  border: none;
+  padding: 8px 24px;
+  background-color: rgba(176, 225, 241, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+}
+.btn:hover {
+  background-color: rgba(176, 225, 241, 1);
+  box-shadow: 0 0 5px white;
+}
+.previous {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.carouselText {
+  position: absolute;
+  display: inline-block;
+  font-size: 1em;
+  color: black;
+  border-radius: 16px;
+}
+.road, .mtb, .city {
+  padding: 20px 45px;
+}
+.mtb {
+  left: 4300px;
+  background-color: rgba(187, 184, 184, 0.85);
+}
+.road {
+  left: 300px;
+  background-color: rgba(168, 181, 207, 0.85);
+}
+.city {
+  left: 2400px;
+  background-color: rgba(250, 241, 228, 0.85);
+}
+#roadList, #roadList a, #mtbList, #mtbList a {
+  margin: 30px 8px 0;
+  padding: 2px 12px;
+  font-weight: bold;
+}
+#roadList a, #mtbList a {
+  border: 1px solid;
+  border-radius: 5px;
+}
+.gridContainer {
+  width: 100%;
+  height: 100%;
+}
+.flexContainer {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+}
+.item {
+  display: flex;
+  margin: 0 10px;
+}
+img {
+  object-fit: cover;
+}
+.imageText {
+  position: absolute;
+  margin: 100px 10px;
+  padding: 10px;
+  color: white;
+  width: 350px;
+  text-align: left;
+  /* top: 50%;
+  right: 50%;
+  transform: translate(-50% -50%); */
+}
+.imageText p {
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-flow: row;
+  border: 2px solid;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.emailHeading {
+  text-align: center;
+}
+.emailSignUp {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+input#enterEmail, #emailButton {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5em;
+}
+input#enterEmail {
+  border-radius: 0;
+  background-color: none;
+  flex-grow: 2;
+}
+input#enterEmail:focus  {
+  outline: none;
+}
+#emailButton {
+  background-color: lightblue;
+  color: white;  
+  cursor: pointer;
+}
+#emailButton:hover {
+  background-color: rgb(10, 123, 138);
+}
+footer {
+  height: 300px;
+  color: rgb(14, 162, 182);
+  background-color: rgb(26, 25, 25);
+}
+.fContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer h2 {
+  text-transform: uppercase;
+}
+.fList {
+  width: auto;
+  list-style: none;
+  border-bottom: 2px solid white;
+  border-collapse: collapse;
+  padding: 40px;
+}
+
+p#copyright {
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+}
