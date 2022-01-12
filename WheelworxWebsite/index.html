@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Wheelworx</title>
+</head>
+
+<body>
+  <div class="header">
+    <ul class="navList">
+
+      <li id="link1"><a href="#">Contact</a></li>
+      <li id="link2"><a href="#">About</a></li>
+      <li id="link3"><a href="#">News</a></li>
+
+      <li id="link4"><a href="#">Login</a></li>
+      <li id="link5"><a href="#">Register</a></li>
+      <li id="link6"><a href="#">Basket</a></li>
+    </ul>
+  </div>
+
+  <div class="header2">
+    <img id="logo" src="wheelworx.png" alt="err" width="300px" height="90px">
+
+    <div class="mainNavList">
+      <div class="dropdown">Bikes
+        <div class="dropdownContent">
+          <a href="#">MTB</a>
+          <a href="#">Road</a>
+          <a href="#">Electric</a>
+          <a href="#">Kids</a>
+          <a href="#">Hybrid</a>
+          <a href="#">Cyclocross</a>
+          <a href="#">Triathlon</a>
+        </div>
+      </div>
+      <div class="dropdown">Clothing
+        <div class="dropdownContent">
+          <a href="#">Shorts</a>
+          <a href="#">Gloves</a>
+          <a href="#">Hoodies</a>
+          <a href="#">Jerseys</a>
+          <a href="#">Shoe Covers</a>
+          <a href="#">Shorts</a>
+          <a href="#">T-Shirts</a>
+          <a href="#">Vests</a>
+          <a href="#">Hats</a>
+        </div>
+      </div>
+      <div class="dropdown">Helmets
+        <div class="dropdownContent">
+          <a href="#">MTB</a>
+          <a href="#">Road</a>
+          <a href="#">Kids</a>
+        </div>
+      </div>
+      <div class="dropdown">Accessories
+        <div class="dropdownContent">
+          <a href="#">Computers</a>
+          <a href="#">Lights</a>
+          <a href="#">Bottles</a>
+          <a href="#">Mudguards</a>
+          <a href="#">Tools</a>
+          <a href="#">Pumps</a>
+          <a href="#">Spares</a>
+          <a href="#">Sealant</a>
+          <a href="#">Locks</a>
+        </div>
+      </div>
+      <div class="dropdown">Components
+        <div class="dropdownContent">
+          <a href="#">MTB</a>
+          <a href="#">Road</a>
+        </div>
+      </div>
+      <span class="extraTabs">
+        <a href="#" style="color: red">Sale</a>
+        <a href="#">Brands</a>
+      </span>
+
+    </div>
+
+    <input type="text" id="navSearch" name="productSearch" placeholder="Search products/services">
+
+  </div>
+
+  <div class="carousel">
+    <button class="btn previous" id="previous">
+      < </button>
+        <div class="imageCarousel">
+          <img src="a.jpg" alt="img" width="2000px">
+          <div class="carouselText road">
+            <h2>Road</h2>
+            <p> Try any of the Trek performance road bikes today!
+            </p>
+            <ul id="roadList">
+              <a href="#">Domane</a>
+              <a href="#">Emonda</a>
+              <a href="#">Madone</a>
+            </ul>
+
+          </div>
+          <img src="b.jpg" alt="img" width="2000px">
+          <div class="carouselText city">
+            <h2>City</h2>
+            <p>We have a large range of city bikes</p>
+          </div>
+          <img src="c.jpg" alt="img" width="2000px">
+          <div class="carouselText mtb">
+            <h2>MTB</h2>
+            <p>Procaliber, Supercaliber, Top Fuel, Fuel Ex, Slash and more...</p>
+            <ul id="mtbList">
+              <a href="#">Procaliber</a>
+              <a href="#">Supercaliber</a>
+              <a href="#">Top Fuel</a>
+              <a href="#">Fuel Ex</a>
+            </ul>
+          </div>
+
+        </div>
+        <button class="btn next" id="next"> > </button>
+  </div>
+  <div class="gridContainer">
+    <div class="flexContainer">
+      <div class="item">
+        <img src="commuter.jpg" alt="err" width="400px">
+        <div class="imageText" id="commuter">
+          <h2>Commuter</h2>
+          <p>Try the FX range for the perfect work commuter!</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="bmx.jpg" alt="err" width="400px">
+        <div class="imageText">
+          <h2>BMX</h2>
+          <p>Everyone loves a BMX</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="triathalon.jpg" alt="err" width="400px">
+        <div class="imageText">
+          <h2>Triathalon</h2>
+          <p>We are the only place to come for anything to do with triathalons</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="nightride.jpg" alt="err" width="400px">
+        <div class="imageText">
+          <h2>Adventure seeker</h2>
+          <p>Carbon adventure bikes? Yes please!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="emailHeading">Sign up to stay up-to-date</h2>
+  <p class="emailHeading">By signing up you agree to all the T's & C's <br>
+    We dont spam your email<br>
+    We do send you deals!<br>
+  </p>
+  <div class="emailSignUp">
+    <form>
+      <input type="text" id="enterEmail" placeholder="Enter your email...">
+      <button id="emailButton">
+        Join Us
+      </button>
+    </form>
+  </div>
+  <footer>
+    <div class="fContainer">
+      <ul class="fList">
+        <h2>Shop Info</h2>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>News</li>
+      </ul>
+      <ul class="fList">
+        <h2>Policies</h2>
+        <li>Terms & Conditions</li>
+        <li>Returns Policy</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <ul class="fList"l>
+        <h2>Services</h2>
+        <li>Workshop</li>
+        <li>Cycle to work scheme</li>
+      </ul>
+      </div>
+
+    <p id="copyright">&copy;Skeng Software Systems, 2022</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
