@@ -17,11 +17,13 @@
 <body>
   <div class="header">
     <ul class="navList">
-
       <li id="link1"><a href="#">Contact</a></li>
+    </ul>
+    <ul class="navList-center">
       <li id="link2"><a href="#">About</a></li>
       <li id="link3"><a href="#">News</a></li>
-
+    </ul>
+    <ul class="navList-right">
       <li id="link4"><a href="#">Login</a></li>
       <li id="link5"><a href="#">Register</a></li>
       <li id="link6"><a href="#">Basket</a></li>
@@ -29,12 +31,13 @@
   </div>
 
   <div class="header2">
-    <img id="logo" src="wheelworx.png" alt="err" width="300px" height="90px">
-
+    <picture id="logo">
+      <img src="wheelworx.png" alt="err" width="300px" height="90px">
+    </picture>
     <div class="mainNavList">
       <div class="dropdown">Bikes
         <div class="dropdownContent">
-          <a href="#">MTB</a>
+          <a href="mtb.html">MTB</a>
           <a href="#">Road</a>
           <a href="#">Electric</a>
           <a href="#">Kids</a>
@@ -82,15 +85,15 @@
           <a href="#">Road</a>
         </div>
       </div>
-      <span class="extraTabs">
+      <div class="extraTabs">
         <a href="#" style="color: red">Sale</a>
         <a href="#">Brands</a>
-      </span>
+      </div>
 
     </div>
-
-    <input type="text" name="productSearch" placeholder="Search products/services">
-
+    <div class="searchBox">
+      <input type="text" id="navSearch" name="productSearch" placeholder="Search products/services">
+    </div>
   </div>
 
   <div class="carousel">
@@ -139,7 +142,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="bmx.jpg" alt="err" width="400px" >
+        <img src="bmx.jpg" alt="err" width="400px">
         <div class="imageText">
           <h2>BMX</h2>
           <p>Everyone loves a BMX</p>
@@ -161,45 +164,43 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <div class="gridSpace">
-  <div class="grid-container">
-    <div class="item" id="grid1">
-      <img src="spokes.jpg" alt="err" width="400px" height="600px" id="spokeImg">
-      <div class="gridText workshop">
-        <h3 class="gridTexts">Workshop</h3>
-        <p class="gridTexts">Any services you need our workshop can handle!
-        </p>
-      </div>
-    </div>
-    <div class="item" id="grid2">City</div>
-    <div class="item" id="grid3">Workshop</div>
-    <div class="item" id="grid4">BMX</div>
+  <h2 class="emailHeading">Sign up to stay up-to-date</h2>
+  <p class="emailHeading">By signing up you agree to all the T's & C's <br>
+    We dont spam your email<br>
+    We do send you deals!<br>
+  </p>
+  <div class="emailSignUp">
+    <form>
+      <input type="text" id="enterEmail" placeholder="Enter your email...">
+      <button id="emailButton">
+        Join Us
+      </button>
+    </form>
   </div>
+  <footer>
+    <div class="fContainer">
+      <ul class="fList">
+        <h2>Shop Info</h2>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>News</li>
+      </ul>
+      <ul class="fList">
+        <h2>Policies</h2>
+        <li>Terms & Conditions</li>
+        <li>Returns Policy</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <ul class="fList" l>
+        <h2>Services</h2>
+        <li>Workshop</li>
+        <li>Cycle to work scheme</li>
+      </ul>
+    </div>
 
-  </div> -->
+    <p id="copyright">&copy;Skeng Software Systems, 2022</p>
+  </footer>
+
 
   <script src="script.js"></script>
 
